@@ -41,7 +41,6 @@ img{
 
 @media (max-width: 600px) {
   body{
-    background: blue;
     display: grid;
     grid-template-columns: 475px;
     grid-row: repeat(3);
