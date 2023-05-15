@@ -31,7 +31,11 @@
   main {
     display: block;
   }
-  
+  img{
+    height: 450px;
+    width: auto;
+    align-content: flex-start;
+  }
   /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
@@ -346,4 +350,15 @@
   
   [hidden] {
     display: none;
+  }
+
+  header{
+    background-color: navy;
+    color: white;
+    
+  }
+
+  footer{
+    background-color: navy;
+    color: white;
   }
