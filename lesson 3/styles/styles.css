@@ -1,4 +1,9 @@
 body{
     display: flex;
+    text-align: center;
+    
 
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Oswald&display=swap');
