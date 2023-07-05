@@ -1,4 +1,12 @@
 main{
-    display: block;
-    
+    display: grid;   
+    grid-template-column: repeat(3, 1fr);
+    grid-template-row: repeat(5, 1fr);
+}
+
+.hero{
+    color: red;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 3;
 }
