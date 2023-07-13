@@ -244,13 +244,14 @@ header .navbar{
 {
   margin:0
 }
-@media (max-width:991px)
+/*@media (max-width:991px)
 {
   .site-footer [class^=col-]
   {
     margin-bottom:30px
   }
 }
+ }
 @media (max-width:767px)
 {
   .site-footer
@@ -332,4 +333,4 @@ header .navbar{
     margin-right:0;
     font-weight:600
   }
-}
+} */
