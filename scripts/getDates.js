@@ -1,2 +1,1 @@
-
-dateModif.innerHTML = alert(document.lastModified)
+alert(document.lastModified)
