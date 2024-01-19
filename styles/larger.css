@@ -5,25 +5,30 @@
     }
     img {
         height: auto;
-        width: 400px;
+        width: 250px;
+        padding: 25px;
     }
     header{
         background-color: teal;
         text-align: center;
 
     }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
     nav {
         background-color: teal;
         text-align: center;
         padding: 10px;
-    }
-    main {
-        grid-template-columns: 1fr 1fr;
     }
     .card{
         column-span: 1;
     }
     nav.hover{
         background-color: blueviolet;
+    }
+    h2{
+        column-span: all;
     }
     }
