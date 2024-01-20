@@ -27,6 +27,8 @@
     }
     nav.hover{
         background-color: blueviolet;
+        
+        border:color(from color srgb r g b);
     }
     h2{
         column-span: all;
