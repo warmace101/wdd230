@@ -1,4 +1,4 @@
-@media (min-width: 400px){
+@media (min-width: 37.5em){
 
     *{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -13,14 +13,23 @@
         text-align: center;
 
     }
+    #menu {
+        display:none;
+    
+    }
     main {
         grid-template-columns: 1fr 1fr;
     }
 
     nav {
+        font-weight: 700;
         background-color: teal;
         text-align: center;
         padding: 2rem;
+    }
+    .navigation a {
+        display:flex;
+        
     }
     .card{
         column-span: 1;

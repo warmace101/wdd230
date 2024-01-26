@@ -1,9 +1,14 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
 }
 img {
     height: auto;
     width: 250px;
+}
+.show li{
+    display: block;
 }
 .main-nav{
     display: flex;
@@ -14,64 +19,53 @@ header{
   
 
 #menu{
-    display: block;
     font-size: 2rem;
+    border: 1px solid rgba(0,0,0,.3);
+    padding: 3px 7px 6px;
     font-weight: 700;
     text-decoration: none;
-    padding: .5rem .75rem;
-    background-color: lightcoral;
-    color: darkred;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
 }
 
 #menu::before{
     content: "≡";
 }
-
-nav{
-    background-color: orange;
+#menu.open::before{
+    content: "X";
 }
-
 .navigation {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     margin: 0 auto;
-    max-width: 760px;
-}
-.naviagtion li{
-    display:none;
 }
 
 .navigation a{
-    display: block;
-    padding: 0.75rem;
-    text-align: left;
+    display: none;
+    padding: 1rem;
+    text-align: center;
     text-decoration: none;
     color: black;
-    font-weight: 700;
-    transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
 }
-.navigation a:hover, navigation a:active{
+.navigation a:hover{
     color:white;
     background-color: black;
+    font-weight: 700;
 }
-.show li{
-    display: block;
+.navigation-show {
+    display: none;
 }
-#menu.show::before{
-    content:"X";
+.open a {
+    display:block;
 }
-@media only screen and (min-width: 40em) {
-    .navigation {
-      display: flex;
-    }
-    .navigation li {
-      display: block; /* change state in small view */
-      flex: 1 1 100%;
-    }
-    .navigation a {
-      text-align: center;
-    }
-    #menu {
-      display: none;
-    }
-  }
+
+#mode{ 
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    
+}
