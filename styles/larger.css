@@ -19,8 +19,10 @@
     }
     main {
         grid-template-columns: 1fr 1fr;
+        text-align: left;
+        font-size: large;
+        
     }
-
     nav {
         font-weight: 700;
         background-color: teal;
@@ -28,8 +30,7 @@
         padding: 2rem;
     }
     .navigation a {
-        display:flex;
-        
+        display:inline-block;
     }
     .card{
         column-span: 1;
@@ -38,8 +39,5 @@
         background-color: blueviolet;
         
         border:color(from color srgb r g b);
-    }
-    h2{
-        column-span: all;
     }
     }
