@@ -70,3 +70,17 @@ header{
     font-size: 2rem;
     
 }
+.temple{
+    margin: 10px auto;
+    position: relative;
+}
+.temple img{
+    /*width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: img(50%, 50%);*/
+    /*transform:translate(50%, 50%);*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
