@@ -4,9 +4,9 @@ const list = document.querySelector('#list');
 
 function addFavChap(){
     var favChap = document.getElementById("favChap").ariaValueMax;
-    if (newScript !== ""){
+    if (newScript != ""){
         var listItem = document.createElement("li");
-        listItem.textContent = favChap;
+        listItem.textContent = favChap
         document.getElementById("list").appendChild(listItem);
         document.getElementById("favChap").value = "";
     }
