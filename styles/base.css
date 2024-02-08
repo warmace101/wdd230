@@ -84,3 +84,11 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
+
+.overlay {
+    position: absolute;
+    top: 25px;
+    left: 25px; 
+    padding: 1.5rem;
+
+}
