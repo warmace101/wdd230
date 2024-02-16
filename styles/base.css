@@ -92,3 +92,20 @@ header{
     padding: 1.5rem;
 
 }
+
+form {
+    border: black groove;
+    width: 13rem;
+    text-align: center;
+    
+
+}
+
+
+form .top {
+    display: block;
+    padding: 0.25rem;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+

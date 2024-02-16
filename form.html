@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
@@ -27,18 +27,37 @@
         </ul>
     </nav>
 <main>
-<form method="get" action="record.html">
+    <div id="formmessage"></div>
+<form method="get">
     <fieldset>
         <legend>Web Form</legend>
-        <label>Username*<input type="text" name="username" placeholder="Username" required></label>
-        <label>Password*<input type="text" name="password" placeholder="Password" required></label>
-        <label>Confirm Password*<input type="text" name="confPassword" placeholder="Confirm Password" required></label>
-        <label>Email<input type="email" name="email" placeholder="someone@byui.edu" required></label>
-    </fieldset>
+        <div class="meatOfForm">
+            <label class="top">Username*<input type="text" name="username" placeholder="Username" required></label>
+            <label class="top">Password*<input id="password1" type="text" name="password" placeholder="Password" pattern="[a-zA-Z -]{6,}" required></label>
+            <label class="top">Confirm Password*<input id="password2" type="text" name="confPassword" placeholder="Confirm Password" pattern="[a-zA-Z -]{6,}" required></label>
+            <label class="top">Email*<input type="email" name="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label>
+            <label for="r" class="top">Rating<div id="rangevalue">0</div><input id="r" type="range" name="rating" min="0" max="10" step="1" value="0" list="rangevalues"></label>
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+        </div>
+        </fieldset>
 
 
+    <input type="submit" value="Login" class="submitButton">
 
 </form>
+
 </main>
 <footer>
     <footer>
@@ -48,6 +67,7 @@
     <script src = "scripts/getDates.js"></script>
     <script src="scripts/hamburgMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/form.js"></script>
 
 
 </body>
