@@ -27,36 +27,32 @@
         </ul>
     </nav>
 <main>
-    <div id="formmessage"></div>
-<form method="get" id="form" action="record.html">
-    <fieldset>
-        <legend>Web Form</legend>
-        <div class="meatOfForm">
-            <label class="top">Username*<input type="text" name="username" placeholder="Username" required></label>
-            <label class="top">Password*<input id="password1" type="text" name="password" placeholder="Password" pattern="[a-zA-Z -]{6,}" required></label>
-            <label class="top">Confirm Password*<input id="password2" type="text" name="confPassword" placeholder="Confirm Password" pattern="[a-zA-Z -]{6,}" required></label>
-            <label class="top">Email*<input type="email" name="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label>
-            <label for="r" class="top">Rating<div id="rangevalue">0</div><input id="r" type="range" name="rating" min="0" max="10" step="1" value="0" list="rangevalues"></label>
-            <datalist id="rangevalues">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </datalist>
-        </div>
+    <form method="get" id="form" action="record.html">
+        <fieldset>
+            <legend>Web Form</legend>
+            <div class="meatOfForm">
+                <label class="top">Username*<input type="text" name="username" placeholder="Username" required></label>
+                <label class="top">Password*<input id="password1" type="text" name="password" placeholder="Password" pattern="[a-zA-Z -]{6,}" required></label>
+                <label class="top">Confirm Password*<input id="password2" type="text" name="confPassword" placeholder="Confirm Password" pattern="[a-zA-Z -]{6,}" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label>
+                <label for="r" class="top">Rating<div id="rangevalue">0</div><input id="r" type="range" name="rating" min="0" max="10" step="1" value="0" list="rangevalues"></label>
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </div>
         </fieldset>
-
-
-    <input type="submit" value="Login" class="submitButton">
-
-</form>
+        <input type="submit" value="Login" class="submitButton">
+    </form>
 
 </main>
 <footer>
