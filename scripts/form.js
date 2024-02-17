@@ -37,6 +37,12 @@ document.getElementById("form").addEventListener("submit", function(event) {
 	var password = document.getElementById("password1").value;
 	var confirmPassword = document.getElementById("password2").value;
 	
+	if (password == confirmPassword){
+		alert("Passwords do match")
+		window.location.href=record.html;
+		
+	}
+
 	if (password !== confirmPassword) {
 	  alert("Passwords do not match.");
 	  return;

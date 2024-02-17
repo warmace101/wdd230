@@ -27,6 +27,7 @@
         </ul>
     </nav>
 <main>
+    <h1>Record</h1>
     <form method="get" id="form" action="record.html">
         <fieldset>
             <legend>Web Form</legend>
@@ -35,7 +36,7 @@
                 <label class="top">Password*<input id="password1" type="text" name="password" placeholder="Password" pattern="[a-zA-Z -]{6,}" required></label>
                 <label class="top">Confirm Password*<input id="password2" type="text" name="confPassword" placeholder="Confirm Password" pattern="[a-zA-Z -]{6,}" required></label>
                 <label class="top">Email*<input type="email" name="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label>
-                <label for="r" class="top">Rating<div id="rangevalue">0</div><input id="r" type="range" name="rating" min="0" max="10" step="1" value="0" list="rangevalues"></label>
+                <label class="top">Rating<div id="rangevalue">0</div><input id="r" type="range" name="rating" min="0" max="10" step="1" value="0" list="rangevalues">
                 <datalist id="rangevalues">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -48,10 +49,10 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-                </datalist>
+                </datalist></label>
             </div>
         </fieldset>
-        <input type="submit" value="Login" class="submitButton">
+        <input type="submit" value="Record" class="submitButton">
     </form>
 
 </main>
@@ -60,10 +61,11 @@
         <p> &copy; - 2024, Johnathan Babb, Idaho</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/form.js"></script>
+
     <script src = "scripts/getDates.js"></script>
     <script src="scripts/hamburgMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
-    <script src="scripts/form.js"></script>
 
 
 </body>
