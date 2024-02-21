@@ -11,44 +11,39 @@
     <meta property="image" content="">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
-
-
-    <title>Cache Valley Chamber of Commerce</title>
+    <title>Join Cache Valley Chamber of Commerce</title>
 </head>
 <body>
     <header>
-        <div class="containter">
         <h1>Welcome to Our Chamber of Commerce</h1>
-        <button class="hamburger">&#9776;</button>
-        </div>
-        </header>
-    <nav class="nav-menu">
+    </header>
+    <nav>
         <a href="index.html">Home</a>
-        <a href="discover.html">Discover</a>
+        <a href="#">Discover</a>
         <a href="#">Directory</a>
         <a href="join.html">Join</a>
     </nav>
-    <picture>
-        <source media="(max-width:400px)" srcset="images/center-street-small.webp">
-        <source media="(max-width:960px)" srcset="images/center-street-medium.webp">
-        <img src="images/center-street-large.webp" alt="Center Street" style="width:auto">
-    </picture>
-
     <section>
-        <h2>About Us</h2>
-        <p>Welcome to the Chamber of Commerce! We are dedicated to promoting local businesses and fostering economic growth in our community.</p>
-    </section>
-    <section class="weather">
-        <h2>Local Weather</h2>
-        <!--Weather info displayed here (Use javascript here to add the info probably)-->
-    </section>
-    <section>
-        <h2>Membership</h2>
-        <p>Become a member today and enjoy exclusive benefits, networking opportunities, and access to resources that can help your business thrive.</p>
-    </section>
-    <section>
-        <h2>Events</h2>
-        <p>Check out our upcoming events where you can connect with other members, learn from industry experts, and stay informed about the latest trends.</p>
+        <h2>Join the Chamber</h2>
+        <p>Joining the Cache Valley Chamber of Commerce provides your business with a wide range of benefits and opportunities for growth. Fill out the form below to get started!</p>
+        <form action="submission.html" method="get">
+            <label for="company_name">Company Name:</label><br>
+            <input type="text" id="company_name" name="company_name" placeholder="Company Name" required><br>
+            
+            <label for="contact_name">Contact Name:</label><br>
+            <input type="text" id="contact_name" name="contact_name" placeholder="Contact Name" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="someone@something.com" required><br>
+            
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="867-5309" required><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            
+            <input type="submit" value="Submit">
+        </form>
     </section>
     <button id="openFooterBtn" class="open-footer-btn">Open Footer</button>
     <footer>
@@ -64,4 +59,4 @@
     <script src="scripts/footerToggle.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
 </body>
-</html> 
+</html>
