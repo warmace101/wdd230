@@ -83,4 +83,10 @@ img {
 }
 #closeFooterBtn{
     display: none;
+<<<<<<< HEAD
+=======
+}
+.toggle-footer {
+    display: none;
+>>>>>>> 80d056ea5bfadf17a839d21b162ebc27a3119ad1
 }
